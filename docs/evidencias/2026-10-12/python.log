@@ -1,0 +1,17 @@
+test_digest_and_deploy_id (test_deploy_render.RenderHookTests.test_digest_and_deploy_id) ... ok
+test_hook_without_key_is_rejected (test_deploy_render.RenderHookTests.test_hook_without_key_is_rejected) ... ok
+test_mutable_image_is_rejected (test_deploy_render.RenderHookTests.test_mutable_image_is_rejected) ... ok
+test_secret_not_exposed_on_error (test_deploy_render.RenderHookTests.test_secret_not_exposed_on_error) ... ok
+test_invalid_ranking_fails_and_saves_failure (test_smoke_test.DeployVerificationTests.test_invalid_ranking_fails_and_saves_failure) ... ok
+test_old_version_is_rejected (test_smoke_test.DeployVerificationTests.test_old_version_is_rejected) ... ok
+test_retry_waits_for_new_revision_and_queries_database (test_smoke_test.DeployVerificationTests.test_retry_waits_for_new_revision_and_queries_database) ... ok
+test_unhealthy_database_is_rejected (test_smoke_test.DeployVerificationTests.test_unhealthy_database_is_rejected) ... ok
+test_wrong_environment_is_rejected (test_smoke_test.DeployVerificationTests.test_wrong_environment_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.012s
+
+OK
+Tentativa 1/1: aguardando API, banco e revisao esperada.
+Tentativa 1/2: aguardando API, banco e revisao esperada.
+OK: Staging, revisao new, ranking com 0 cidades

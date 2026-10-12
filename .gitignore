@@ -1,0 +1,52 @@
+## Build .NET
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+[Xx]64/
+[Xx]86/
+[Ww][Ii][Nn]32/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Resultados de testes
+[Tt]est[Rr]esult*/
+TestResults/
+*.trx
+*.coverage
+coverage*.json
+coverage*.xml
+coverage*.info
+
+## Ferramentas / IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+
+## Variaveis de ambiente (nunca versionar segredos)
+.env
+.env.local
+.env.*.local
+
+## Sistema operacional
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+## Publicacao
+publish/
+*.publishsettings
+
+# Ferramentas temporarias, pacote e configuracoes reais
+tmp/
+output/
+.env.*
+!.env.example
+!.env.staging.example
+!.env.production.example
+__pycache__/
+!docs/evidencias/**/*.trx

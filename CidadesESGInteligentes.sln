@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CidadesESGInteligentes.Api", "src\CidadesESGInteligentes.Api\CidadesESGInteligentes.Api.csproj", "{3F5A1C2E-8B4D-4E7A-9C1F-2D6E8A0B4C11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CidadesESGInteligentes.Tests", "tests\CidadesESGInteligentes.Tests\CidadesESGInteligentes.Tests.csproj", "{7B2D4E6F-1A3C-4D5E-8F90-1B2C3D4E5F22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F5A1C2E-8B4D-4E7A-9C1F-2D6E8A0B4C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F5A1C2E-8B4D-4E7A-9C1F-2D6E8A0B4C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F5A1C2E-8B4D-4E7A-9C1F-2D6E8A0B4C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F5A1C2E-8B4D-4E7A-9C1F-2D6E8A0B4C11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B2D4E6F-1A3C-4D5E-8F90-1B2C3D4E5F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B2D4E6F-1A3C-4D5E-8F90-1B2C3D4E5F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B2D4E6F-1A3C-4D5E-8F90-1B2C3D4E5F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B2D4E6F-1A3C-4D5E-8F90-1B2C3D4E5F22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1D2E3F4-A5B6-4788-9A0B-1C2D3E4F5A66}
+	EndGlobalSection
+EndGlobal

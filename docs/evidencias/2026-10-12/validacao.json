@@ -1,0 +1,88 @@
+{
+  "date_local": "2026-10-12",
+  "recorded_at_utc": "2026-10-12T23:43:01.456470+00:00",
+  "repository": "https://github.com/icaua/Cidades-ESG-Inteligentes",
+  "ready_for_submission": false,
+  "build": {
+    "status": "passed",
+    "sdk": "8.0.425",
+    "errors": 0,
+    "warnings": 0,
+    "log": "build.log"
+  },
+  "xunit": {
+    "status": "passed",
+    "total": 26,
+    "passed": 26,
+    "failed": 0,
+    "trx": "testes/resultado-testes.trx"
+  },
+  "python": {
+    "status": "passed",
+    "total": 9,
+    "log": "python.log",
+    "uses_mocks": true
+  },
+  "workflow_lint": {
+    "status": "passed",
+    "tool": "actionlint 1.7.12",
+    "log": "actionlint.log",
+    "shellcheck": false,
+    "pyflakes": false
+  },
+  "compose_static": {
+    "status": "passed",
+    "log": "config.log"
+  },
+  "docker_execution": {
+    "status": "blocked",
+    "reason": "Docker CLI/Engine nao encontrados; runner ainda nao acessivel"
+  },
+  "github_publish": {
+    "status": "blocked",
+    "http_status": 403,
+    "reason": "Resource not accessible by integration",
+    "files_published": 0
+  },
+  "render": {
+    "status": "blocked",
+    "reason": "Navegador em dashboard.render.com/login; autenticacao necessaria"
+  },
+  "staging": {
+    "status": "not_run",
+    "url": null,
+    "run_id": null
+  },
+  "production": {
+    "status": "not_run",
+    "url": null,
+    "run_id": null
+  },
+  "source_sha256": {
+    "src/CidadesESGInteligentes.Api/appsettings.Development.json": "817db0bf2ecca78364c41dbaf7949bf2504cf47a1c3d0d54f3be8178fefc030b",
+    "src/CidadesESGInteligentes.Api/appsettings.json": "2d8bb40059df22089b94c025be8baad5a869b72d4d755d199c872f03bfe6f225",
+    "src/CidadesESGInteligentes.Api/CidadesESGInteligentes.Api.csproj": "9431ff289d169b735041620a9d512326f4439ac7578b017e82c55bc60b802917",
+    "src/CidadesESGInteligentes.Api/Controllers/CidadesController.cs": "2e97ed52bb598cda32b771096fed4ff2d3efdc4ce5893269a91dd70ad11f9128",
+    "src/CidadesESGInteligentes.Api/Data/AppDbContext.cs": "3f6de55f350c526b1a3fb46d3002d98a53dc555eba876b51ea9a264eb8199fc1",
+    "src/CidadesESGInteligentes.Api/Data/DatabaseInitializer.cs": "e2b1b389b894f940aadf8bb930d07db3f255deb476d7f79505218e47ddbdb0f7",
+    "src/CidadesESGInteligentes.Api/Dtos/CidadeRequest.cs": "dc47682e7d1d5555e4cad44e8013515b049a680b951fcf1812f73e9091e87550",
+    "src/CidadesESGInteligentes.Api/Dtos/CidadeResponse.cs": "c238ab47b727a8ac94e5e33488ab37f83d70175062cc1fdeacfaecbe9b76093f",
+    "src/CidadesESGInteligentes.Api/Dtos/RankingItemResponse.cs": "546bc6ae1b0fe679cde58a1b8025587a0d2073c06402cf7e3eb4733d5b7d1e27",
+    "src/CidadesESGInteligentes.Api/Models/Cidade.cs": "1aa03f195ecc884ddbe0ce8de93693ddbd97669038499b29627e8522b6d9d795",
+    "src/CidadesESGInteligentes.Api/Program.cs": "bbb6b69db7dbf77d5712e8cecbd330a4a575f57c03903fba265019ca8458eabc",
+    "src/CidadesESGInteligentes.Api/Properties/launchSettings.json": "68ddae8904ffc3df7e53455cbf5c3492df5be09b7cf863350865a6d2a67fa17b",
+    "src/CidadesESGInteligentes.Api/Services/EsgCalculator.cs": "5f155cb603ac4c2a953b8af1f680d482646d140c7acd22ec03b2fa3016573763",
+    "tests/CidadesESGInteligentes.Tests/CidadeCadastroTests.cs": "f66611cb83d07486bdd3c7351f083122adb28fd4ff6cae844e39200445e20832",
+    "tests/CidadesESGInteligentes.Tests/CidadesESGInteligentes.Tests.csproj": "ff283907224a071cd458fb3585eaca5cbd9731503392b779e9b31113c1872613",
+    "tests/CidadesESGInteligentes.Tests/EsgCalculatorTests.cs": "bbcae8accc33d01415e914101fab0aa41e6ce24c18ce959482c67d2df054c66d",
+    "scripts/deploy_render.py": "c64222b6b6a03e8d39670648b6fd63b3b4d31309bf29ed3dba6356fe6fb2ec03",
+    "scripts/generate_documentation.py": "dc5dded1c35bdb3aad9325f74b2ae42e574dc88e297a09ef93b25bf9eae99f20",
+    "scripts/package_project.py": "64c9b885f4b705c1f3eb22fa2a10139b98e1620ace203f536eed760b0d1a2fa5",
+    "scripts/requirements-docs.txt": "0ec98dec841c1516b68b6746771f773edbbfb8ad6c1e658f7713a9516f35b41f",
+    "scripts/smoke_test.py": "a9e8fe6ad5d930cbbf1d07de5f052e4d27560a5c2584181aaae3227fc2d19e67",
+    "scripts/test_deploy_render.py": "9f09c9885c9013c5702c3ea96d572edd1175c5a3e93221ff257b15e8f4bb2d5b",
+    "scripts/test_smoke_test.py": "f7aa04389d85879a3e980fd16df02950ba0ebf1d293be02930a3c0236e83dc1c",
+    "scripts/verify_compose.py": "2bd85431a1aaa8d4afe5e7c709cfbc9fee815ee641a1b4f5eda6e5ccde22f026",
+    ".github/workflows/ci-cd.yml": "cf39324e03dd7c4546f9e64e61448a7ac58cc5d688e8c000fee887fc66ca2964"
+  }
+}

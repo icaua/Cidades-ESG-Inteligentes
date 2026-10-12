@@ -1,0 +1,44 @@
+Execução de teste para C:\Users\icaua\Documents\Cidades ESG Inteligentes\tests\CidadesESGInteligentes.Tests\bin\Release\net8.0\CidadesESGInteligentes.Tests.dll (.NETCoreApp,Version=v8.0)
+Versão do VSTest 17.11.1 (x64)
+
+Iniciando execução de teste, espere...
+1 arquivos de teste no total corresponderam ao padrão especificado.
+C:\Users\icaua\Documents\Cidades ESG Inteligentes\tests\CidadesESGInteligentes.Tests\bin\Release\net8.0\CidadesESGInteligentes.Tests.dll
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 8.0.31)
+[xUnit.net 00:00:00.06]   Discovering: CidadesESGInteligentes.Tests
+[xUnit.net 00:00:00.09]   Discovered:  CidadesESGInteligentes.Tests
+[xUnit.net 00:00:00.09]   Starting:    CidadesESGInteligentes.Tests
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.Classificar_DeveTratarCorretamenteOsLimitesDeCadaFaixa(pontuacao: 59,990000000000002, esperado: "Regular") [54 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.Classificar_DeveTratarCorretamenteOsLimitesDeCadaFaixa(pontuacao: 80, esperado: "Excelente") [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.Classificar_DeveTratarCorretamenteOsLimitesDeCadaFaixa(pontuacao: 0, esperado: "Critico") [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.Classificar_DeveTratarCorretamenteOsLimitesDeCadaFaixa(pontuacao: 40, esperado: "Regular") [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.Classificar_DeveTratarCorretamenteOsLimitesDeCadaFaixa(pontuacao: 79,989999999999995, esperado: "Bom") [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.Classificar_DeveTratarCorretamenteOsLimitesDeCadaFaixa(pontuacao: 60, esperado: "Bom") [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.Classificar_DeveTratarCorretamenteOsLimitesDeCadaFaixa(pontuacao: 39,990000000000002, esperado: "Critico") [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.Classificar_DeveTratarCorretamenteOsLimitesDeCadaFaixa(pontuacao: 100, esperado: "Excelente") [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.CalcularPontuacao_DeveSempreFicarEntre0E100 [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.Classificar_DeveRetornarAFaixaCorrespondenteAPontuacao(pontuacao: 50, esperado: "Regular") [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.Classificar_DeveRetornarAFaixaCorrespondenteAPontuacao(pontuacao: 30, esperado: "Critico") [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.Classificar_DeveRetornarAFaixaCorrespondenteAPontuacao(pontuacao: 65, esperado: "Bom") [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.Classificar_DeveRetornarAFaixaCorrespondenteAPontuacao(pontuacao: 85, esperado: "Excelente") [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.Avaliar_DeveDevolverPontuacaoEClassificacaoConsistentes [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.CalcularPontuacao_ComTodosOsIndicadoresNoMaximo_DeveRetornar100 [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.CalcularPontuacao_ComTodosOsIndicadoresZerados_DeveRetornar0 [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.CalcularPontuacao_DeveRespeitarOPesoDeCadaIndicador [< 1 ms]
+[xUnit.net 00:00:00.20]   Finished:    CidadesESGInteligentes.Tests
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.CalcularPontuacao_ComTodosOsIndicadoresIguais_DeveRetornarOMesmoValor [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.CalcularPontuacao_AcimaDaMetaDeProjetosSociais_NaoDevePontuarAlemDoTeto [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.EsgCalculatorTests.CalcularPontuacao_DeveArredondarParaDuasCasasDecimais [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.CidadeCadastroTests.Cadastro_ComDadosValidos_NaoDeveApresentarErros [59 ms]
+  Aprovado CidadesESGInteligentes.Tests.CidadeCadastroTests.Cadastro_SemNome_DeveSerRejeitado [1 ms]
+  Aprovado CidadesESGInteligentes.Tests.CidadeCadastroTests.Cadastro_ComPercentualForaDaEscala_DeveSerRejeitado(percentualInvalido: -10) [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.CidadeCadastroTests.Cadastro_ComPercentualForaDaEscala_DeveSerRejeitado(percentualInvalido: 150) [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.CidadeCadastroTests.Cadastro_DeveNormalizarNomeEEstadoAoGerarAEntidade [< 1 ms]
+  Aprovado CidadesESGInteligentes.Tests.CidadeCadastroTests.Cadastro_ComPopulacaoZerada_DeveSerRejeitado [< 1 ms]
+AVISO: sobrescrevendo o arquivo de resultados: C:\Users\icaua\Documents\Cidades ESG Inteligentes\docs\evidencias\testes\resultado-testes.trx
+Arquivo de resultados: C:\Users\icaua\Documents\Cidades ESG Inteligentes\docs\evidencias\testes\resultado-testes.trx
+
+Execução de Teste Bem-sucedida.
+Total de testes: 26
+     Aprovados: 26
+Tempo total: 0,5265 Segundos

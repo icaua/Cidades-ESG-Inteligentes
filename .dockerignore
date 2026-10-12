@@ -1,0 +1,41 @@
+# Artefatos de build locais nunca devem entrar no contexto do Docker:
+# alem de deixar o build lento, podem sobrescrever o que foi compilado no container.
+**/bin/
+**/obj/
+**/out/
+**/publish/
+
+# Testes
+**/TestResults/
+**/resultados-testes/
+*.trx
+
+# Segredos e configuracao local
+.env
+.env.local
+.env.*.local
+
+# Ferramentas / IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Controle de versao e CI
+.git/
+.gitignore
+.github/
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose*.yml
+
+# Documentacao
+*.md
+tmp/
+output/
+docs/
+scripts/
+.env.*
