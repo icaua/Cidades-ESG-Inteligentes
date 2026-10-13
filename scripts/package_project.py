@@ -14,7 +14,7 @@ if not PDF.is_file():
 parser = argparse.ArgumentParser()
 parser.add_argument("--final", action="store_true", help="Exige comprovacao de todos os requisitos")
 args = parser.parse_args()
-status_file = ROOT / "docs/evidencias/2026-10-12/validacao.json"
+status_file = ROOT / "docs/evidencias/2026-10-13/validacao.json"
 status = json.loads(status_file.read_text(encoding="utf-8")) if status_file.exists() else {}
 ready = status.get("ready_for_submission") is True
 if args.final and not ready:

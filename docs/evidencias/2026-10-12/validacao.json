@@ -84,5 +84,6 @@
     "scripts/test_smoke_test.py": "f7aa04389d85879a3e980fd16df02950ba0ebf1d293be02930a3c0236e83dc1c",
     "scripts/verify_compose.py": "2bd85431a1aaa8d4afe5e7c709cfbc9fee815ee641a1b4f5eda6e5ccde22f026",
     ".github/workflows/ci-cd.yml": "cf39324e03dd7c4546f9e64e61448a7ac58cc5d688e8c000fee887fc66ca2964"
-  }
+  },
+  "superseded_by": "../2026-10-13/validacao.json"
 }

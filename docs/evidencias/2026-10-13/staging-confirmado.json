@@ -1,0 +1,48 @@
+{
+  "url": "https://cidades-esg-staging-l9tl.onrender.com",
+  "environment": "Staging",
+  "expected_version": "fdd1db6f2313336c3355ba6cf7b06b7ba746d314",
+  "timestamp_utc": "2026-10-13T09:28:05.394847+00:00",
+  "success": true,
+  "health": {
+    "status": "ok",
+    "ambiente": "Staging",
+    "versao": "fdd1db6f2313336c3355ba6cf7b06b7ba746d314"
+  },
+  "ranking": [
+    {
+      "posicao": 1,
+      "id": 1,
+      "nome": "Curitiba",
+      "estado": "PR",
+      "pontuacaoEsg": 82.7,
+      "classificacaoEsg": "Excelente"
+    },
+    {
+      "posicao": 2,
+      "id": 2,
+      "nome": "Sao Paulo",
+      "estado": "SP",
+      "pontuacaoEsg": 54.45,
+      "classificacaoEsg": "Regular"
+    },
+    {
+      "posicao": 3,
+      "id": 3,
+      "nome": "Recife",
+      "estado": "PE",
+      "pontuacaoEsg": 39.45,
+      "classificacaoEsg": "Critico"
+    },
+    {
+      "posicao": 4,
+      "id": 4,
+      "nome": "Manaus",
+      "estado": "AM",
+      "pontuacaoEsg": 27.25,
+      "classificacaoEsg": "Critico"
+    }
+  ],
+  "attempt": 1,
+  "verified_at_utc": "2026-10-13T09:28:06.961058+00:00"
+}

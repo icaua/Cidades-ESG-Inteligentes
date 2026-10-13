@@ -1,0 +1,372 @@
+{
+  "total_count": 4,
+  "jobs": [
+    {
+      "id": 115225280303,
+      "run_id": 38323935914,
+      "workflow_name": "CI/CD",
+      "head_branch": "develop",
+      "run_url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/runs/38323935914",
+      "run_attempt": 2,
+      "node_id": "CR_kwDOVGoRr88AAAAa0_Y_Lw",
+      "head_sha": "fdd1db6f2313336c3355ba6cf7b06b7ba746d314",
+      "url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/jobs/115225280303",
+      "html_url": "https://github.com/icaua/Cidades-ESG-Inteligentes/actions/runs/38323935914/job/115225280303",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-13T09:26:00Z",
+      "started_at": "2026-10-13T09:26:03Z",
+      "completed_at": "2026-10-13T09:26:11Z",
+      "name": "Deploy staging",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-13T09:26:04Z",
+          "completed_at": "2026-10-13T09:26:04Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-13T09:26:04Z",
+          "completed_at": "2026-10-13T09:26:05Z"
+        },
+        {
+          "name": "Deploy da imagem validada e smoke test",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-13T09:26:05Z",
+          "completed_at": "2026-10-13T09:26:08Z"
+        },
+        {
+          "name": "Guardar evidencia do deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-13T09:26:08Z",
+          "completed_at": "2026-10-13T09:26:08Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-13T09:26:08Z",
+          "completed_at": "2026-10-13T09:26:09Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-13T09:26:09Z",
+          "completed_at": "2026-10-13T09:26:09Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/check-runs/115225280303",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000079,
+      "runner_name": "GitHub Actions 1000000079",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 115225281784,
+      "run_id": 38323935914,
+      "workflow_name": "CI/CD",
+      "head_branch": "develop",
+      "run_url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/runs/38323935914",
+      "run_attempt": 2,
+      "node_id": "CR_kwDOVGoRr88AAAAa0_ZE-A",
+      "head_sha": "fdd1db6f2313336c3355ba6cf7b06b7ba746d314",
+      "url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/jobs/115225281784",
+      "html_url": "https://github.com/icaua/Cidades-ESG-Inteligentes/actions/runs/38323935914/job/115225281784",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-13T09:26:00Z",
+      "started_at": "2026-10-12T23:47:10Z",
+      "completed_at": "2026-10-12T23:47:35Z",
+      "name": "Build e testes",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-12T23:47:11Z",
+          "completed_at": "2026-10-12T23:47:11Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-12T23:47:11Z",
+          "completed_at": "2026-10-12T23:47:12Z"
+        },
+        {
+          "name": "Run actions/setup-dotnet@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-12T23:47:12Z",
+          "completed_at": "2026-10-12T23:47:13Z"
+        },
+        {
+          "name": "Restore",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-12T23:47:13Z",
+          "completed_at": "2026-10-12T23:47:21Z"
+        },
+        {
+          "name": "Build",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-12T23:47:21Z",
+          "completed_at": "2026-10-12T23:47:28Z"
+        },
+        {
+          "name": "Testes xUnit",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-12T23:47:28Z",
+          "completed_at": "2026-10-12T23:47:32Z"
+        },
+        {
+          "name": "Testar verificador de deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-12T23:47:32Z",
+          "completed_at": "2026-10-12T23:47:33Z"
+        },
+        {
+          "name": "Guardar resultados",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-12T23:47:33Z",
+          "completed_at": "2026-10-12T23:47:33Z"
+        },
+        {
+          "name": "Post Run actions/setup-dotnet@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-10-12T23:47:33Z",
+          "completed_at": "2026-10-12T23:47:33Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-10-12T23:47:33Z",
+          "completed_at": "2026-10-12T23:47:34Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-10-12T23:47:34Z",
+          "completed_at": "2026-10-12T23:47:34Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/check-runs/115225281784",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000076,
+      "runner_name": "GitHub Actions 1000000076",
+      "runner_group_id": null,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 115225282372,
+      "run_id": 38323935914,
+      "workflow_name": "CI/CD",
+      "head_branch": "develop",
+      "run_url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/runs/38323935914",
+      "run_attempt": 2,
+      "node_id": "CR_kwDOVGoRr88AAAAa0_ZHRA",
+      "head_sha": "fdd1db6f2313336c3355ba6cf7b06b7ba746d314",
+      "url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/jobs/115225282372",
+      "html_url": "https://github.com/icaua/Cidades-ESG-Inteligentes/actions/runs/38323935914/job/115225282372",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-13T09:26:00Z",
+      "started_at": "2026-10-12T23:47:37Z",
+      "completed_at": "2026-10-12T23:49:14Z",
+      "name": "Imagem e integracao com PostgreSQL",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-12T23:47:37Z",
+          "completed_at": "2026-10-12T23:47:39Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-12T23:47:39Z",
+          "completed_at": "2026-10-12T23:47:39Z"
+        },
+        {
+          "name": "Nome da imagem",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-12T23:47:39Z",
+          "completed_at": "2026-10-12T23:47:39Z"
+        },
+        {
+          "name": "Run docker/setup-buildx-action@v3",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-12T23:47:39Z",
+          "completed_at": "2026-10-12T23:47:45Z"
+        },
+        {
+          "name": "Autenticar GHCR",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-12T23:47:45Z",
+          "completed_at": "2026-10-12T23:47:45Z"
+        },
+        {
+          "name": "Construir imagem",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-12T23:47:45Z",
+          "completed_at": "2026-10-12T23:48:38Z"
+        },
+        {
+          "name": "Subir API e banco; verificar integracao",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-12T23:48:38Z",
+          "completed_at": "2026-10-12T23:49:07Z"
+        },
+        {
+          "name": "Guardar logs dos containers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-12T23:49:07Z",
+          "completed_at": "2026-10-12T23:49:07Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-12T23:49:07Z",
+          "completed_at": "2026-10-12T23:49:08Z"
+        },
+        {
+          "name": "Encerrar containers de CI",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-12T23:49:08Z",
+          "completed_at": "2026-10-12T23:49:08Z"
+        },
+        {
+          "name": "Post Construir imagem",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-10-12T23:49:08Z",
+          "completed_at": "2026-10-12T23:49:09Z"
+        },
+        {
+          "name": "Post Autenticar GHCR",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-10-12T23:49:09Z",
+          "completed_at": "2026-10-12T23:49:10Z"
+        },
+        {
+          "name": "Post Run docker/setup-buildx-action@v3",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-10-12T23:49:10Z",
+          "completed_at": "2026-10-12T23:49:12Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-10-12T23:49:12Z",
+          "completed_at": "2026-10-12T23:49:12Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-10-12T23:49:12Z",
+          "completed_at": "2026-10-12T23:49:12Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/check-runs/115225282372",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000077,
+      "runner_name": "GitHub Actions 1000000077",
+      "runner_group_id": null,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 115225355951,
+      "run_id": 38323935914,
+      "workflow_name": "CI/CD",
+      "head_branch": "develop",
+      "run_url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/runs/38323935914",
+      "run_attempt": 2,
+      "node_id": "CR_kwDOVGoRr88AAAAa0_dmrw",
+      "head_sha": "fdd1db6f2313336c3355ba6cf7b06b7ba746d314",
+      "url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/jobs/115225355951",
+      "html_url": "https://github.com/icaua/Cidades-ESG-Inteligentes/actions/runs/38323935914/job/115225355951",
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-10-13T09:26:11Z",
+      "started_at": "2026-10-13T09:26:11Z",
+      "completed_at": "2026-10-13T09:26:11Z",
+      "name": "Deploy production",
+      "steps": [],
+      "check_run_url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/check-runs/115225355951",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": null,
+      "runner_name": null,
+      "runner_group_id": null,
+      "runner_group_name": null
+    }
+  ]
+}

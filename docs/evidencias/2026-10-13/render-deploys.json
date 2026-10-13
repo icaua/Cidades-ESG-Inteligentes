@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[{\"createdAt\":\"2026-10-13T09:26:07.480736Z\",\"finishedAt\":\"2026-10-13T09:26:31.062697Z\",\"id\":\"dep-db6vibs9v7es739vje50\",\"image\":{\"ref\":\"ghcr.io/icaua/cidades-esg-inteligentes@sha256:d84b32f2e169f2af003755477054899634bbed0e4107f104c2ff8807aaf7c4b4\",\"sha\":\"sha256:d84b32f2e169f2af003755477054899634bbed0e4107f104c2ff8807aaf7c4b4\"},\"startedAt\":\"2026-10-13T09:26:09.463482Z\",\"status\":\"live\",\"trigger\":\"deploy_hook\",\"updatedAt\":\"2026-10-13T09:26:57.947479Z\"},{\"createdAt\":\"2026-10-13T09:23:23.018438Z\",\"finishedAt\":\"2026-10-13T09:24:06.353352Z\",\"id\":\"dep-db6vh2t9fdbs73eh7hog\",\"image\":{\"ref\":\"ghcr.io/icaua/cidades-esg-inteligentes@sha256:d84b32f2e169f2af003755477054899634bbed0e4107f104c2ff8807aaf7c4b4\",\"sha\":\"sha256:d84b32f2e169f2af003755477054899634bbed0e4107f104c2ff8807aaf7c4b4\"},\"startedAt\":\"2026-10-13T09:23:24.799925Z\",\"status\":\"deactivated\",\"trigger\":\"manual\",\"updatedAt\":\"2026-10-13T09:26:31.061955Z\"}]\n\n cursor: fwzUUE_YDMpoMnQ5ZmRiczczZWg3aG9n"
+    }
+  ],
+  "isError": false
+}

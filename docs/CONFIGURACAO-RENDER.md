@@ -2,19 +2,19 @@
 
 Repositório: https://github.com/icaua/Cidades-ESG-Inteligentes
 
-## 1. Liberar a publicação no GitHub
+## 1. Estado confirmado em 13/10/2026
 
-A consulta ao repositório funcionou em 12/10/2026, mas a gravação recebeu HTTP 403
-`Resource not accessible by integration`. A lista de instalações retornou vazia.
-Abra o plugin GitHub no aplicativo e inicie a conexão/autorização da conta icaua.
-Selecione este repositório quando o GitHub solicitar acesso. Se já existir uma
-instalação da integração, ela pode ser configurada em Settings > Applications >
-Installed GitHub Apps. Não altere integrações de outros produtos. Não compartilhe
-tokens no chat.
+GitHub já foi publicado pela autenticação existente do Git Credential Manager.
+Não é necessário reconectar a integração que retornou 403 na primeira tentativa.
+Build, testes, GHCR, Compose e deploy staging passaram no run 38323935914, tentativa 2.
+`RENDER_DEPLOY_HOOK_STAGING` e `STAGING_URL` estão configurados. A URL é
+https://cidades-esg-staging-l9tl.onrender.com.
 
-Depois do acesso, publique os arquivos preservando .github/workflows/ci-cd.yml.
-O primeiro push em main executa CI e tenta staging. Se o hook ainda não existir,
-staging falha e produção fica bloqueada; a imagem permanece disponível no GHCR.
+**Produção pendente por opção de custo zero.** O segundo PostgreSQL gratuito foi
+recusado (`cannot have more than one active free tier database`). O plano mínimo
+preparado custava US$ 6,30/mês com 1 GB; não foi autorizado e a criação foi cancelada.
+Não há URL, banco, serviço ou hook de produção. As etapas abaixo descrevem como
+reproduzir staging ou preparar produção futuramente, não recursos já existentes.
 
 ## 2. Criar staging primeiro
 

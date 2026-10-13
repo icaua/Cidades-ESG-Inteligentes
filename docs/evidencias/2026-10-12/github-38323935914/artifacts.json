@@ -1,0 +1,105 @@
+{
+  "total_count": 5,
+  "artifacts": [
+    {
+      "id": 11801636843,
+      "node_id": "MDg6QXJ0aWZhY3QxMTgwMTYzNjg0Mw==",
+      "name": "deploy-staging",
+      "size_in_bytes": 730,
+      "url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/artifacts/11801636843",
+      "archive_download_url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/artifacts/11801636843/zip",
+      "expired": false,
+      "digest": "sha256:4c9b6bd1e4b5882dabefaf54cdb2b0ba21ac12d1c04b8abf4b59a8fa0dcce019",
+      "created_at": "2026-10-13T09:26:08Z",
+      "updated_at": "2026-10-13T09:26:08Z",
+      "expires_at": "2027-01-11T09:25:59Z",
+      "workflow_run": {
+        "id": 38323935914,
+        "repository_id": 1416237487,
+        "head_repository_id": 1416237487,
+        "head_branch": "develop",
+        "head_sha": "fdd1db6f2313336c3355ba6cf7b06b7ba746d314"
+      }
+    },
+    {
+      "id": 11780455497,
+      "node_id": "MDg6QXJ0aWZhY3QxMTc4MDQ1NTQ5Nw==",
+      "name": "deploy-staging",
+      "size_in_bytes": 440,
+      "url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/artifacts/11780455497",
+      "archive_download_url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/artifacts/11780455497/zip",
+      "expired": false,
+      "digest": "sha256:6d3082f77c0a30810e912afe292eae530f2c02e3bdee04bd110c110ab8f5d9cb",
+      "created_at": "2026-10-12T23:49:19Z",
+      "updated_at": "2026-10-12T23:49:19Z",
+      "expires_at": "2027-01-10T23:47:08Z",
+      "workflow_run": {
+        "id": 38323935914,
+        "repository_id": 1416237487,
+        "head_repository_id": 1416237487,
+        "head_branch": "develop",
+        "head_sha": "fdd1db6f2313336c3355ba6cf7b06b7ba746d314"
+      }
+    },
+    {
+      "id": 11780046128,
+      "node_id": "MDg6QXJ0aWZhY3QxMTc4MDA0NjEyOA==",
+      "name": "resultados-testes",
+      "size_in_bytes": 5038,
+      "url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/artifacts/11780046128",
+      "archive_download_url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/artifacts/11780046128/zip",
+      "expired": false,
+      "digest": "sha256:28a9d6eb37dd6eaa6675fb1d89934b83a44c8fd4d42a008ec0e44ddaed4a6a28",
+      "created_at": "2026-10-12T23:47:33Z",
+      "updated_at": "2026-10-12T23:47:33Z",
+      "expires_at": "2026-11-11T23:47:33Z",
+      "workflow_run": {
+        "id": 38323935914,
+        "repository_id": 1416237487,
+        "head_repository_id": 1416237487,
+        "head_branch": "develop",
+        "head_sha": "fdd1db6f2313336c3355ba6cf7b06b7ba746d314"
+      }
+    },
+    {
+      "id": 11779574006,
+      "node_id": "MDg6QXJ0aWZhY3QxMTc3OTU3NDAwNg==",
+      "name": "icaua~Cidades-ESG-Inteligentes~51SI0U.dockerbuild",
+      "size_in_bytes": 66984,
+      "url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/artifacts/11779574006",
+      "archive_download_url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/artifacts/11779574006/zip",
+      "expired": false,
+      "digest": "sha256:6577a73b1efb6b3b0fc47f834dc6ef213c31ab277258657134ba1eb7b01d63fc",
+      "created_at": "2026-10-12T23:49:09Z",
+      "updated_at": "2026-10-12T23:49:09Z",
+      "expires_at": "2027-01-10T23:47:08Z",
+      "workflow_run": {
+        "id": 38323935914,
+        "repository_id": 1416237487,
+        "head_repository_id": 1416237487,
+        "head_branch": "develop",
+        "head_sha": "fdd1db6f2313336c3355ba6cf7b06b7ba746d314"
+      }
+    },
+    {
+      "id": 11779444409,
+      "node_id": "MDg6QXJ0aWZhY3QxMTc3OTQ0NDQwOQ==",
+      "name": "integracao-docker",
+      "size_in_bytes": 2862,
+      "url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/artifacts/11779444409",
+      "archive_download_url": "https://api.github.com/repos/icaua/Cidades-ESG-Inteligentes/actions/artifacts/11779444409/zip",
+      "expired": false,
+      "digest": "sha256:343443d4a7e9f87f72d21a8e0b64a5f62d9ddf32e83b00e895ad7a68e2ee2c78",
+      "created_at": "2026-10-12T23:49:08Z",
+      "updated_at": "2026-10-12T23:49:08Z",
+      "expires_at": "2027-01-10T23:47:08Z",
+      "workflow_run": {
+        "id": 38323935914,
+        "repository_id": 1416237487,
+        "head_repository_id": 1416237487,
+        "head_branch": "develop",
+        "head_sha": "fdd1db6f2313336c3355ba6cf7b06b7ba746d314"
+      }
+    }
+  ]
+}

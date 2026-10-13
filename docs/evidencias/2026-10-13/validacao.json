@@ -1,0 +1,46 @@
+{
+  "date_local": "2026-10-13",
+  "repository": "https://github.com/icaua/Cidades-ESG-Inteligentes",
+  "ready_for_submission": false,
+  "application_commit": "fdd1db6f2313336c3355ba6cf7b06b7ba746d314",
+  "image_ref": "ghcr.io/icaua/cidades-esg-inteligentes@sha256:d84b32f2e169f2af003755477054899634bbed0e4107f104c2ff8807aaf7c4b4",
+  "build": {
+    "status": "passed"
+  },
+  "xunit": {
+    "passed": 26,
+    "failed": 0
+  },
+  "python": {
+    "passed": 9,
+    "failed": 0,
+    "uses_mocks": true
+  },
+  "docker_execution": {
+    "status": "passed",
+    "environment": "GitHub Actions Ubuntu runner",
+    "persistence_verified": true
+  },
+  "github": {
+    "run_id": 38323935914,
+    "attempt": 2,
+    "conclusion": "success",
+    "branch": "develop",
+    "run_url": "https://github.com/icaua/Cidades-ESG-Inteligentes/actions/runs/38323935914"
+  },
+  "staging": {
+    "status": "passed",
+    "url": "https://cidades-esg-staging-l9tl.onrender.com",
+    "deploy_id": "dep-db6vibs9v7es739vje50",
+    "trigger": "deploy_hook",
+    "render_status": "live",
+    "verification": "staging-confirmado.json"
+  },
+  "production": {
+    "status": "pending",
+    "url": null,
+    "reason": "Only one active free Postgres allowed; user chose zero cost and pending production"
+  },
+  "render_staging_database_expires": "2026-11-11",
+  "documentation_only_changes_after_deployed_commit": true
+}

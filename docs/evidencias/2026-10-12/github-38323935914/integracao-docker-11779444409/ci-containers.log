@@ -1,0 +1,48 @@
+db-1  | 
+db-1  | PostgreSQL Database directory appears to contain a database; Skipping initialization
+db-1  | 
+db-1  | 2026-10-12 23:48:55.928 UTC [1] LOG:  starting PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+db-1  | 2026-10-12 23:48:55.928 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db-1  | 2026-10-12 23:48:55.928 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db-1  | 2026-10-12 23:48:55.929 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db-1  | 2026-10-12 23:48:55.932 UTC [30] LOG:  database system was shut down at 2026-10-12 23:48:55 UTC
+db-1  | 2026-10-12 23:48:55.937 UTC [1] LOG:  database system is ready to accept connections
+api-1  | info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+api-1  |       Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+api-1  |       SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+api-1  |       FROM pg_class AS cls
+api-1  |       JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+api-1  |       WHERE
+api-1  |               cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+api-1  |               ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+api-1  |               -- Exclude tables which are members of PG extensions
+api-1  |               NOT EXISTS (
+api-1  |                   SELECT 1 FROM pg_depend WHERE
+api-1  |                       classid=(
+api-1  |                           SELECT cls.oid
+api-1  |                           FROM pg_class AS cls
+api-1  |                                    JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+api-1  |                           WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+api-1  |                       ) AND
+api-1  |                       objid=cls.oid AND
+api-1  |                       deptype IN ('e', 'x')
+api-1  |               )
+api-1  | info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+api-1  |       Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+api-1  |       SELECT EXISTS (
+api-1  |           SELECT 1
+api-1  |           FROM cidades AS c)
+api-1  | info: DatabaseInitializer[0]
+api-1  |       Banco de dados pronto (tentativa 1).
+api-1  | info: Microsoft.Hosting.Lifetime[14]
+api-1  |       Now listening on: http://[::]:8080
+api-1  | info: Microsoft.Hosting.Lifetime[0]
+api-1  |       Application started. Press Ctrl+C to shut down.
+api-1  | info: Microsoft.Hosting.Lifetime[0]
+api-1  |       Hosting environment: Staging
+api-1  | info: Microsoft.Hosting.Lifetime[0]
+api-1  |       Content root path: /app
+api-1  | info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+api-1  |       Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+api-1  |       SELECT c."Id", c."AtualizadoEm", c."CriadoEm", c."Estado", c."IndicadorSocial", c."IndiceSaneamento", c."Nome", c."PercentualAreaVerde", c."PercentualColetaSeletiva", c."PercentualEnergiaRenovavel", c."Populacao", c."QuantidadeProjetosSociais"
+api-1  |       FROM cidades AS c

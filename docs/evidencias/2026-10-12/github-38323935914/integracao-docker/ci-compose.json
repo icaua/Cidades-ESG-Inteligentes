@@ -1,0 +1,53 @@
+{
+  "success": true,
+  "project": "ci",
+  "version": "fdd1db6f2313336c3355ba6cf7b06b7ba746d314",
+  "before": {
+    "api": {
+      "id": "eb0a14dac6b78c3867bd42e13d774e2eeeaddc21e052c4b3078e818a01b1330b",
+      "image_id": "sha256:edaf7856e8b33e1805025747a13b50900918d1dc076c07dad302ca46f00e704c",
+      "health": "healthy",
+      "networks": [
+        "ci_cidades-esg-net"
+      ],
+      "volumes": []
+    },
+    "db": {
+      "id": "fe4bda3c7c3c37868bc8fe2d7f5bc544b203a22af655f3011a8dc934971ccfa9",
+      "image_id": "sha256:81bd698b4594e751a3269e4dcd3e03a4a0ec0daf7b72e7aa1abd43cce9887542",
+      "health": "healthy",
+      "networks": [
+        "ci_cidades-esg-net"
+      ],
+      "volumes": [
+        "ci_postgres-data"
+      ]
+    }
+  },
+  "after": {
+    "api": {
+      "id": "a89f031105b70a2e5ba69f77979bd93ee671455e5916d688b7ddaefd2b1352e0",
+      "image_id": "sha256:edaf7856e8b33e1805025747a13b50900918d1dc076c07dad302ca46f00e704c",
+      "health": "healthy",
+      "networks": [
+        "ci_cidades-esg-net"
+      ],
+      "volumes": []
+    },
+    "db": {
+      "id": "39ee183cd13b7e0a27443d6a12ab1e32c9566093734562beb10889e3e61494a4",
+      "image_id": "sha256:81bd698b4594e751a3269e4dcd3e03a4a0ec0daf7b72e7aa1abd43cce9887542",
+      "health": "healthy",
+      "networks": [
+        "ci_cidades-esg-net"
+      ],
+      "volumes": [
+        "ci_postgres-data"
+      ]
+    }
+  },
+  "persistence_verified": true,
+  "shared_networks": [
+    "ci_cidades-esg-net"
+  ]
+}

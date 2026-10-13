@@ -1,0 +1,10 @@
+{
+  "success": false,
+  "environment": "Staging",
+  "expected_version": "fdd1db6f2313336c3355ba6cf7b06b7ba746d314",
+  "image_ref": "ghcr.io/icaua/cidades-esg-inteligentes@sha256:d84b32f2e169f2af003755477054899634bbed0e4107f104c2ff8807aaf7c4b4",
+  "timestamp_utc": "2026-10-12T23:49:18.452565+00:00",
+  "run_id": "38323935914",
+  "run_url": "https://github.com/icaua/Cidades-ESG-Inteligentes/actions/runs/38323935914",
+  "error_type": "ValueError"
+}

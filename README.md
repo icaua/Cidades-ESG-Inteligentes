@@ -4,15 +4,16 @@
 **Repositório:** https://github.com/icaua/Cidades-ESG-Inteligentes
 
 **Atividade:** Navegando pelo mundo DevOps  
-**Atualização:** 12/10/2026
+**Atualização:** 13/10/2026
 
 API acadêmica em C# para cadastrar cidades, calcular uma pontuação ESG e consultar um ranking.
 Os indicadores e dados iniciais são fictícios, usados apenas para demonstração.
 Swagger é a interface de demonstração, disponível na raiz da aplicação.
 
-> **Situação da entrega:** build local aprovado, 26 testes xUnit e 9 testes Python aprovados.
-> Docker e deploys remotos ainda não executados neste ambiente. Este pacote precisa das
-> evidências de staging e produção antes da entrega definitiva. Não há links ou prints de deploy inventados.
+> **Situação da entrega:** build, 26 testes xUnit, 9 testes Python, Docker Compose,
+> GHCR e deploy automatizado em staging comprovados. Produção permanece pendente:
+> o Render recusou um segundo PostgreSQL gratuito, e o titular optou por manter custo zero.
+> O ZIP é uma revisão com pendência, não uma entrega integralmente aprovada.
 
 ## Estrutura
 
@@ -258,31 +259,38 @@ Segredos reais não devem entrar no ZIP nem no Git.
 
 ## Prints do funcionamento
 
-### Evidências disponíveis
+### Execução comprovada em 13/10/2026
+
+- [GitHub Actions: run 38323935914, tentativa 2](https://github.com/icaua/Cidades-ESG-Inteligentes/actions/runs/38323935914) - sucesso em develop.
+- Commit da aplicação: `fdd1db6f2313336c3355ba6cf7b06b7ba746d314`.
+- Imagem: `ghcr.io/icaua/cidades-esg-inteligentes@sha256:d84b32f2e169f2af003755477054899634bbed0e4107f104c2ff8807aaf7c4b4`.
+- [Staging](https://cidades-esg-staging-l9tl.onrender.com) · [Health](https://cidades-esg-staging-l9tl.onrender.com/health) · [Ranking](https://cidades-esg-staging-l9tl.onrender.com/api/cidades/ranking).
+- [Deploy Render por hook](https://dashboard.render.com/web/srv-db6vh2l9fdbs73eh7h3g/deploys/dep-db6vibs9v7es739vje50) - live.
+
+![Pipeline real: build, testes, integração e staging aprovados; produção skipped](docs/evidencias/2026-10-13/github-actions.jpg)
+
+![Render: staging live, imagem por digest e acionamento por Deploy Hook](docs/evidencias/2026-10-13/render-staging.jpg)
 
 | Evidência | Resultado | Arquivo |
 | --- | --- | --- |
-| Restore local | Concluído | [restore-local.log](docs/evidencias/restore-local.log) |
-| Build Release local | 0 erros, 0 avisos | [build-local.log](docs/evidencias/2026-10-12/build.log) |
-| Testes xUnit locais | 26 aprovados | [testes-local.log](docs/evidencias/2026-10-12/xunit.log) |
-| Relatório estruturado | TRX | [resultado-testes.trx](docs/evidencias/2026-10-12/testes/resultado-testes.trx) |
-| Testes do verificador | 9 aprovados, com mocks | [testes-deploy-local.log](docs/evidencias/2026-10-12/python.log) |
-| YAML | Validação estática aprovada | [validacao-config.log](docs/evidencias/validacao-config.log) |
+| Build local .NET 8 | 0 erros, 0 avisos | [build.log](docs/evidencias/2026-10-12/build.log) |
+| xUnit | 26 aprovados local e CI | [TRX](docs/evidencias/2026-10-12/testes/resultado-testes.trx) |
+| Python | 9 aprovados | [python.log](docs/evidencias/2026-10-12/python.log) |
+| Docker Compose | API e banco saudáveis, rede e volume, persistência após recriação | [ci-compose.json](docs/evidencias/2026-10-12/github-38323935914/integracao-docker/ci-compose.json) |
+| Deploy automatizado staging | success=true; hook HTTP 200 e ID do deploy | [artifact atual](docs/evidencias/2026-10-12/github-38323935914/deploy-staging-11801636843/staging.json) |
+| Endpoints após deploy live | Staging, SHA correto, ranking com 4 cidades | [staging-confirmado.json](docs/evidencias/2026-10-13/staging-confirmado.json) |
+| Render | trigger=deploy_hook, status=live | [render-deploys.json](docs/evidencias/2026-10-13/render-deploys.json) |
+| Produção | Não executada | [Pendências](docs/STATUS-ENTREGA.md) |
 
-A documentação contém trechos desses logs; eles não são prints do GitHub Actions.
-Docker Engine não estava disponível nesta máquina. A execução remota será registrada no relatório docs/STATUS-ENTREGA.md; as URLs dos ambientes ainda precisam ser configuradas.
+A tentativa 1 falhou por hook/URL ausentes. A tentativa 2 reexecutou staging após
+a configuração e reaproveitou build/imagem aprovados. Produção foi ignorada por ser
+develop; não há evidência de implantação em produção. Os registros de falha foram
+preservados com IDs próprios. O Docker foi executado no runner Ubuntu, não no Windows local.
+O navegador integrado bloqueou a abertura direta do endpoint; a validação HTTP real
+foi realizada pelo script e salva em JSON. Não foi fabricada captura do endpoint.
 
-### Evidências a coletar antes da entrega
-
-Siga [docs/evidencias/README.md](docs/evidencias/README.md). Inclua capturas reais de:
-
-- GitHub Actions: identificação da execução/commit e etapas build, testes e deploy.
-- Staging: URL visível, Swagger e health com `ambiente=Staging` e SHA correspondente.
-- Produção: URL visível, Swagger e health com `ambiente=Production` e SHA correspondente.
-- Ranking respondendo nos dois ambientes e containers/banco saudáveis.
-
-Acrescente os links reais das duas execuções do Actions e dos ambientes nesta seção.
-Depois atualize o PDF e o ZIP; não marque o checklist como concluído sem essas provas.
+O banco gratuito expira em **11/11/2026**, conforme o Render. Serviços gratuitos podem
+hibernar. A configuração de produção está descrita em [CONFIGURACAO-RENDER.md](docs/CONFIGURACAO-RENDER.md).
 
 ## Tecnologias utilizadas
 
@@ -299,7 +307,9 @@ GitHub Actions; GHCR; Render; Python 3 (automação) e ReportLab (geração do P
 | API poderia responder sem banco disponível | /health consulta conectividade e retorna 503 em falha |
 | Deploy poderia buscar imagem diferente da validada | Hook recebe digest imutável do build |
 | Faltava comprovação local | SDK temporário, build e execução dos testes com logs |
-| Sem Docker e sem destinos remotos fornecidos | CI preparado para integração; execução/evidências permanecem pendentes |
+| Docker ausente no Windows | Build e Compose executados no runner Ubuntu do Actions |
+| Hook/URL de staging ausentes | Secret e variável configurados; rerun concluído |
+| Apenas um PostgreSQL gratuito no Render | Produção pendente por decisão de manter custo zero |
 
 Limites do cenário acadêmico: Swagger e CRUD são públicos, sem autenticação;
 schema fixo com `EnsureCreated`; uma instância por ambiente; sem rollback ou
@@ -317,8 +327,8 @@ A geração produz `output/pdf/Documentacao-tecnica.pdf` e
 `output/CidadesESGInteligentes-revisao-pendente.zip` enquanto houver pendências.
 O modo `python scripts/package_project.py --final` recusa gerar uma entrega
 definitiva sem aprovação registrada. O ZIP antigo de 04/10 não representa esta revisão.
-Atualize o conteúdo do gerador para
-incluir os links/prints reais antes de finalizar a documentação. O empacotador
+O relatório atual é `docs/evidencias/2026-10-13/validacao.json`.
+As mudanças finais de documentação não alteram a revisão implantada. O empacotador
 exclui bin, obj, ferramentas temporárias, .git e arquivos de segredos.
 
 ## Referências técnicas
@@ -330,16 +340,14 @@ exclui bin, obj, ferramentas temporárias, .git e arquivos de segredos.
 
 ## Checklist de entrega (obrigatório)
 
-**Preenchimento em 12/10/2026.** Itens parciais continuam desmarcados.
+**Preenchimento em 13/10/2026.** Itens com evidências incompletas continuam desmarcados.
 
 | Item | OK | Situação |
 | --- | :---: | --- |
-| Projeto compactado em .ZIP com estrutura organizada | [x] | Código, configurações, scripts, logs e PDF incluídos |
-| Dockerfile funcional | [ ] | Implementado; build/execução Docker pendentes |
-| docker-compose.yml ou arquivos Kubernetes | [ ] | Configuração presente e sintaxe válida; execução real pendente |
-| Pipeline com etapas de build, teste e deploy | [ ] | Aprovação depende da execução completa, incluindo os dois deploys |
-| README.md com instruções e prints | [ ] | Instruções e logs disponíveis; prints remotos pendentes |
-| Documentação técnica com evidências (PDF ou PPT) | [ ] | PDF com evidências locais; faltam prints de pipeline/deploy |
-| Deploy realizado nos ambientes staging e produção | [ ] | Ainda não comprovado |
-
-
+| Projeto compactado em .ZIP com estrutura organizada | [x] | Pacote de revisão; inclui fontes, scripts, evidências e PDF |
+| Dockerfile funcional | [x] | Imagem construída no CI e executada no Compose e Render |
+| docker-compose.yml ou arquivos Kubernetes | [x] | Compose executado; rede, volume, persistência e healthchecks comprovados |
+| Pipeline com etapas de build, teste e deploy | [ ] | Funcionou até staging; falta execução de produção |
+| README.md com instruções e prints | [x] | Capturas reais do Actions e Render staging incluídas |
+| Documentação técnica com evidências (PDF ou PPT) | [ ] | PDF atualizado; evidência de produção ainda ausente |
+| Deploy realizado nos ambientes staging e produção | [ ] | Apenas staging comprovado |
